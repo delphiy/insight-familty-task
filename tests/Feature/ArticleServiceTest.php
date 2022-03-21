@@ -4,9 +4,6 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use App\Services\ArticleService;
-use Database\Factories\UserFactory;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class ArticleServiceTest extends TestCase
@@ -35,4 +32,6 @@ class ArticleServiceTest extends TestCase
         $this->assertArrayHasKey('date', (array)$articles[0]);
         $this->assertArrayHasKey('original_url', (array)$articles[0]);
     }
+
+    //We might do more test to check pagination
 }

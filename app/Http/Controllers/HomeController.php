@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Services\ArticleService;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -20,5 +19,4 @@ class HomeController extends Controller
             'data' => $this->articleService->fetchArticles(10)
         ]);
     }
-
 }
